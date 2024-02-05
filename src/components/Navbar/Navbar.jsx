@@ -18,9 +18,6 @@ const Navbar = () => {
 	const [expanded, setExpanded] = useState(false);
 	const [isMobile] = useMediaQuery('(max-width: 768px)');
 
-	const theme = useTheme();
-	const drawerBgColor = useColorModeValue(theme.colors.neutral['100'], 'neutral.800');
-
 	const toggleSidebar = () => {
 		setExpanded((prev) => !prev);
 	};
