@@ -5,7 +5,27 @@ const theme = {
 		initialColorMode: 'dark',
 		useSystemColorMode: true
 	},
+	// components: {
+	// 	Button: {
+	// 		variants: {
+	// 			spotify: {
+	// 				bg: 'spotify',
+	// 				color: 'white',
+	// 				_hover: {
+	// 					bg: 'neutral.900'
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// },
 	colors: {
+		spotify: {
+			100: '#1DB954',
+			200: '#1DB954',
+			300: '#1DB954',
+			400: '#1DB954',
+			500: '#1DB954'
+		},
 		neutral: {
 			100: '#161A1D',
 			200: '#22272B',
