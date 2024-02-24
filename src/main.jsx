@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import { ChakraProvider } from '@chakra-ui/react';
 import { ColorModeScript } from '@chakra-ui/color-mode';
 import theme from './theme.jsx';
+import CreateSessionPage from './pages/CreateSessionPage.jsx';
 
 const AppLayout = () => (
 	<>
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
 			{
 				path: '/create',
 				element: <CreatePage/>
+			},
+			{
+				path: '/create-session',
+				element: <CreateSessionPage/>
 			},
 			{
 				path: '/join',

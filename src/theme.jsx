@@ -1,6 +1,26 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const theme = {
+	styles: {
+		global: (props) => ({
+			html: {
+				padding: 0,
+				margin: 0,
+				fontFamily: '\'Inter\', sans-serif',
+				fontWeight: 500,
+				letterSpacing: '1px',
+				minHeight: '100%'
+			},
+			body: {
+				padding: 0,
+				margin: 0,
+				fontFamily: '\'Inter\', sans-serif',
+				fontWeight: 500,
+				letterSpacing: '1px',
+				minHeight: '100%'
+			}
+		})
+	},
 	config: {
 		initialColorMode: 'dark',
 		useSystemColorMode: true
@@ -42,25 +62,6 @@ const theme = {
 
 		hoverLight: '#B6C2CF',
 		hoverDark: '#2C333A'
-	},
-	styles: {
-		global: (props) => ({
-			'@import': 'url(\'https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap\');',
-			html: {
-				padding: 0,
-				margin: 0,
-				fontFamily: '\'Inter\', sans-serif',
-				fontWeight: 500,
-				letterSpacing: '1px'
-			},
-			body: {
-				padding: 0,
-				margin: 0,
-				fontFamily: '\'Inter\', sans-serif',
-				fontWeight: 500,
-				letterSpacing: '1px'
-			}
-		})
 	}
 };
 
